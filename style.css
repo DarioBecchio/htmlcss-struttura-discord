@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Debug*/
+.debug #site_header {
+height: 50px;
+background-color: blueviolet;
+} 
+.debug .logo {
+    height:20px;
+    width:30px;
+    background-color: black;
+}
+.debug .menu{
+    height: 20px;
+    width:200px;
+    background-color: bisque;    
+}
+.debug .access{
+    height:20px;
+    width: 30px;
+    background-color: aqua;
+}
+
+
+
+/*Common*/
+.menu{
+    width: 200px;
+    height:30px;
+    justify-content: space-between;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    justify-content: space-between;
+}
