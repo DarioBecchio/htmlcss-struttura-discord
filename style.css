@@ -5,8 +5,8 @@
 }
 /*Debug*/
 .debug #site_header {
-height: 50px;
-background-color: blueviolet;
+    height: 50px;
+    background-color: blueviolet;
 } 
 .debug .logo {
     height:20px;
@@ -23,14 +23,28 @@ background-color: blueviolet;
     width: 30px;
     background-color: aqua;
 }
-
+.debug .container{
+    border:1px, solid, red;
+}
+.debug .raw{
+    background-color: rgba(165, 42, 42, 0.068);
+}
+.debug .col-6{
+    background-color: aqua;
+}
 
 
 /*Common*/
+body{
+    
+    
+}
 .menu{
     width: 200px;
     height:30px;
-    justify-content: space-between;
+    display: flex;
+    justify-content:space-around; 
+    flex-grow: calc(4);
 }
 .upper{
     display: flex;
@@ -44,4 +58,15 @@ a{
 }
 header{
     justify-content: space-between;
+}
+.container{
+    
+    max-width: 1152px;
+    margin:auto
+}
+.raw{
+    display: flex;
+}
+.col-6{
+width: 50%;
 }
