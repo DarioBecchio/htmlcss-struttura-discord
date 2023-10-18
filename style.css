@@ -1,7 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root{
+    --top: #3161E0;
+    --white: #FFFFFF;
+    --gray: #F6F6F6;
+    --black: #23272A;
+    --lblue: #8EA1E1;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
 }
 /*Debug*/
 .debug #site_header {
@@ -21,13 +33,14 @@
     background-color: aqua;
 }
 .debug .container{
-    border:1px, solid, red;
+    border: 1px solid red;
 }
 .debug .raw{
     background-color: rgba(165, 42, 42, 0.068);
+    border: 5px, solid, black;
 }
 .debug .col-6{
-    border: 5px, solid, black;
+    border: 2px solid black;
 }
 .debug .meet{
     background-color: bisque;
@@ -44,24 +57,10 @@
 .debug .tecnology{
     background-color: green;
 }
-.debug .col-5{
-    margin: 2px solid black;
-}
+/*endebug*/
 
 /*Common*/
 
-.menu{
-    
-    height:30px;
-    display: flex;
-    justify-content:space-around; 
-    flex-grow: calc(4);
-}
-.upper{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-}
 ul{
     list-style: none;
 }
@@ -77,20 +76,23 @@ a{
 .raw{
     display: flex;
 }
+.column{
+    flex-direction: column;
+    align-items: center;
+}
 .col-6{
 width: 50%;
 height: 400px; 
-border: 2px, solid , black;
+
 }
 
 button{
     text-decoration: none;
-    display: inline-block;
     background-color: transparent;
     border: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    font-size: 14px;   
+    border-radius: 1.5rem;
+    font-size: 14px; 
+    padding: 0.5rem 0.75rem;  
 }
 .d-flex{
     display: flex;
@@ -104,10 +106,41 @@ button{
 .justify-center{
     justify-content: center;
 }
+.space_between{
+    justify-content: space-between;
+}
+
 
 /*header*/
+#site_header{
+    background-color: var(--top);
+}
+.menu{
+    
+    height:30px;
+    display: flex;
+    justify-content:space-around; 
+    flex-grow: calc(2);
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.access{
+    padding: 0.25rem , 0.5rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+.logo{
+    padding: 0.5rem , 0.5rem;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+}
 #site_header nav .logo,
-#site_header nav .access {
+#site_header nav .h1 {
     flex-grow: 1;
 }
 #site_header nav .menu{
@@ -121,17 +154,79 @@ button{
     background-image: url(./img/jumbo.png);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 400px;   
+    padding: 5rem;
+}
+.jtitle{
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-size: 3.5rem;
+}
+.jtext{
+    margin-bottom: 1rem;
+    color: var(--white);
+    line-height: 1.5rem;
+
+}
+.download{
+    background-color: var(--white);
+    color: var(--black);
     
 }
-.download , .open{
-    display: flex;
+.open{
+    background-color: var(--black);
+    color: var(--white);    
 }
+
 /*endjumbotron*/
 
 /*place*/
-.logo_1{
-   width: 100%;
-   height:100%;
+.place{
+    background-color: var(--white);
 }
+.logo_1{
+    width: 100%;
+    height:100%;
+}
+/*endplace*/
+/*meet*/
+.meet{
+    background-color: var(--gray);
+}
+.logo_2{
+    width: 100%;
+    height:100%;
+}
+/*endmeet*/
+/*less*/
+.logo_3{
+    width: 100%;
+    height:100%;
+}
+/*endless*/
+
+/*tecnology*/
+.tecnology{
+text-align: center;
+background-color: var(--gray);
+}
+.logo_4{
+    height: 100%;
+    width:100%;
+}
+/*endtecnology*/
 /*footer*/
+#site_footer{
+    background-color: var(--black);
+    text-align: center;
+}
+#site_footer section .first{
+    flex-grow: 1;
+}
+#site_footer section .h1{
+    flex-grow: 2;
+}
+.register{
+    background-color: var(--lblue);
+    color: var(--white);
+}
